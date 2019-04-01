@@ -16,21 +16,22 @@ void pause (){
 }
 
 
-void init_img(int x, int y, SDL_Surface *source,SDL_Surface *destination,){
+
+SDL_Rect init_img(int x, int y, SDL_Surface *source,SDL_Surface *destination)
+{
 SDL_Rect offset;
 offset.x=x;
 offset.y=y;
+return (offset);}
+
+
+
+
+
+void bg(SDL_Surface *ecran, SDL_Surface *background)
+{SDL_Rect sett;
+background= IMG_Load("background.jpg");
+sett=init_img(0,0, background,ecran);
+SDL_BlitSurface(background , NULL, ecran, &sett );
+
 }
-
-
-
-void SDL_BlitSurface( source, a, destination, &offset );
-
-
-
-void bg(SDL_Surface *ecran=NULL, SDL_Surface *background=NULL)
-{
-background= SDL_LoadBMP(background.bmp);
-background= SDL_BlitSurface( , a, destination, &offset );
-
-
