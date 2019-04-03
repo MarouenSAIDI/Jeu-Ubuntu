@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
  
     SDL_Init(SDL_INIT_VIDEO);
  
-    SDL_WM_SetIcon(IMG_Load("sdl_icone.bmp"), NULL);
+    
  
     ecran = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE);
-    SDL_WM_SetCaption("Chargement d'images en SDL", NULL);
+    
  
     imageDeFond = IMG_Load("backg.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
