@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <SDL/SDL.h>
-void pause();
+#include "objet.h"
  
 int main(int argc, char *argv[])
 {
