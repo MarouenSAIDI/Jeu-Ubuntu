@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     SDL_FreeSurface(objet);
     SDL_Quit();
  
-    return EXIT_SUCCESS;
+    
 }
  
 void pause()
