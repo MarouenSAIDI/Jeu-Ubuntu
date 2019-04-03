@@ -1,7 +1,7 @@
 #include <SDL/SDL.h>
 #include "clavier.h"
 #include "Personnage.h"
-using namespace std;
+
  enum Direction {
         None,
         Left,
