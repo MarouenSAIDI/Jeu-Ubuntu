@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
  
     
-    objet = IMG_Load("objet.png");
+    objet = IMG_Load("objet.bmp");
     SDL_BlitSurface(objet, NULL, ecran, &positionobjet);
  
     SDL_Flip(ecran);
