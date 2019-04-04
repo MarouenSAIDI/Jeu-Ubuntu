@@ -10,15 +10,15 @@ struct AABB
 
 int CollisionAABBvsAABB(AABB box1,AABB box2) //boolean
 {
-   if((box2.x >= box1.x + box1.w)      // box2 trop à droite
-	|| (box2.x + box2.w <= box1.x) // box2 trop à gauche
+   if((box2.x >= box1.x + box1.w)      // box2 trop Ã  droite
+	|| (box2.x + box2.w <= box1.x) // box2 trop Ã  gauche
 	|| (box2.y >= box1.y + box1.h) // box2 trop en bas
 	|| (box2.y + box2.h <= box1.y))  // box2 trop en haut
           return 0; //false 
    else
           return 1; //true
 }
-______________________________________________________________________
+//______________________________________________________________________
 // Pour detercter s'il y a collision entre cercle C et point:
 
 struct Cercle
@@ -36,7 +36,7 @@ int CollisionPointCercle (int x,int y,Cercle C) //boolean
       return 1; //true
 }
 
-______________________________________________________
+//______________________________________________________
 // Pour detercter s'il y a collision entre cercle c1 et box1 AABB:
 
 int Collision_Cercle_box1(Cercle C1,AABB box1) //boolean
