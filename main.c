@@ -16,7 +16,7 @@ SDL_Init(SDL_INIT_VIDEO);
 screen = SDL_SetVideoMode(952,535,24,SDL_HWSURFACE | SDL_DOUBLEBUF);
 SDL_WM_SetCaption( "enigmes dynamique", NULL ); 
 
-int n=0;int fact,r;
+int n=0;int r;
 
 	
   
@@ -26,12 +26,12 @@ int n=0;int fact,r;
 
 n=generate_question(&n);
 
-init_affichier_question(n,screen);
-fact=resolution(n);
+init_affichier_question(screen);
+
 
 r=reponse(&r);
-printf("%d %d",r,fact);
-afficher_resultat (screen,fact, r);
+printf("%d %d",r,n);
+afficher_resultat (screen,n, r);
 
 SDL_Quit();
 return 0;

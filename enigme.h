@@ -8,7 +8,7 @@
 
 
 int generate_question(int*n);
-void init_affichier_question(int n,SDL_Surface *screen);
-int resolution(int n);
+void init_affichier_question(SDL_Surface *screen);
+
 int reponse(int *rep );
-void afficher_resultat (SDL_Surface * screen,int solution,int r);
+void afficher_resultat (SDL_Surface * screen,int n,int r);
